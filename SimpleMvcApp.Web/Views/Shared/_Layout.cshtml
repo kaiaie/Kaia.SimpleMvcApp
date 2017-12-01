@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+	  <title>@ViewBag.Title &mdash; App Title</title>
+  </head>
+  <body>
+	<header>@Html.Partial("_Header")</header>
+	<main>
+	  @RenderBody()
+	</main>
+	<footer>@Html.Partial("_Footer")</footer>
+	@RenderSection("scripts", false)
+  </body>
+</html>
